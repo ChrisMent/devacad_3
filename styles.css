@@ -48,12 +48,14 @@ h3 {
     height: 75px;
 
 }
-.navigation-elements{
+
+.navigation-elements {
     display: flex;
     align-items: center;
 
 
 }
+
 .navigation {
     padding: 20px;
 
@@ -137,7 +139,7 @@ a.contact:hover {
     background-image: url("img/background.jpg");
     background-position: center;
     background-size: cover;
-    
+
 }
 
 /**Section | HOW TO ORDER**/
@@ -277,4 +279,49 @@ img.social {
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:950px) {
+    .navigation{
+        display:none;
+    }
+
+    .footer-elements{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headline{
+        text-align: center;
+
+    }
+
+    .order{
+        flex-direction: column;
+    }
+
+    .flexitem{
+        width: 100%;
+    }
+
+    .flexitem div{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .meal-img-left{
+        flex-direction: column;
+    }
+
+    .meal-img-right{
+        flex-direction: column;
+    }
+
 }
